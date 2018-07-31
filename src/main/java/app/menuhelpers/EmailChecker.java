@@ -1,4 +1,4 @@
-package fmutils.helpers;
+package app.menuhelpers;
 
 import org.hazlewood.connor.bottema.emailaddress.EmailAddressValidator;
 

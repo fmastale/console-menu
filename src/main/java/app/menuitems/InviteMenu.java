@@ -1,4 +1,4 @@
-package fmutils.menus;
+package app.menuitems;
 
 import java.util.Scanner;
 

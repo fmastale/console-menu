@@ -1,4 +1,4 @@
-package fmutils.helpers;
+package app.menuhelpers;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

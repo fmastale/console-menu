@@ -1,8 +1,8 @@
-package fmutils.menus;
+package app.menuitems;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 public class LoginMenuTest {
     @Test

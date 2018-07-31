@@ -1,4 +1,4 @@
-package fmutils.helpers;
+package app.menuhelpers;
 
 public class PhoneChecker {
     public boolean isValid(String phone) {

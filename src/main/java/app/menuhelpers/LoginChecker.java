@@ -1,6 +1,6 @@
-package fmutils.helpers;
+package app.menuhelpers;
 
-import fmutils.User;
+import app.User;
 
 import java.util.List;
 

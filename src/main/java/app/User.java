@@ -1,4 +1,4 @@
-package fmutils;
+package app;
 
 public class User {
     private String login;

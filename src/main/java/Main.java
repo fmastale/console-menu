@@ -1,6 +1,5 @@
-import fmutils.*;
-import fmutils.menus.AfterLoginMenu;
-import fmutils.menus.RegisterMenu;
+import app.User;
+import app.menuitems.RegisterMenu;
 
 import java.util.ArrayList;
 import java.util.List;

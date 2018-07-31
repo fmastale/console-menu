@@ -1,10 +1,10 @@
-package fmutils.menus;
+package app.menuitems;
 
-import fmutils.User;
-import fmutils.helpers.EmailChecker;
-import fmutils.helpers.LoginChecker;
-import fmutils.helpers.PasswordManager;
-import fmutils.helpers.PhoneChecker;
+import app.User;
+import app.menuhelpers.EmailChecker;
+import app.menuhelpers.LoginChecker;
+import app.menuhelpers.PasswordManager;
+import app.menuhelpers.PhoneChecker;
 
 import java.util.List;
 import java.util.Scanner;

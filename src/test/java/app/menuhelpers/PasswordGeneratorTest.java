@@ -1,8 +1,9 @@
-package fmutils.helpers;
+package app.menuhelpers;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class PasswordGeneratorTest {
     @Test

@@ -1,6 +1,6 @@
-package fmutils.menus;
+package app.menuitems;
 
-import fmutils.User;
+import app.User;
 
 import java.util.List;
 import java.util.Scanner;
