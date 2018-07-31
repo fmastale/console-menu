@@ -25,5 +25,5 @@ hs_err_pid*
 
 .idea/inspectionProfiles/
 src/main/resources/
-target/generated-sources/
-target/generated-test-sources/
+target/*
+
