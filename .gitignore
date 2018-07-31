@@ -1,4 +1,4 @@
-target/
+/target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -10,6 +10,5 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 .idea/inspectionProfiles/
 src/main/resources/
-/target/
 /console-menu.iml
 /.idea/
