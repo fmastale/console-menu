@@ -12,8 +12,9 @@ public class LoginChecker {
                 return false;
             }
         }
+        // condition is that login should be at least 3 chars long
         if (login.length() < 3){
-            System.out.println("Login should be at least 3 characters long!");
+            System.out.println("Login too short!");
             return false;
         }
 
