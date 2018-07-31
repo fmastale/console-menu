@@ -87,8 +87,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="758">
+              <caret line="91" column="6" lean-forward="false" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -619,7 +619,7 @@
       <workItem from="1532926902316" duration="1883000" />
       <workItem from="1532960866938" duration="7570000" />
       <workItem from="1532981193702" duration="3951000" />
-      <workItem from="1533057767178" duration="605000" />
+      <workItem from="1533057767178" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary=".git ignore added">
       <created>1533058142599</created>
@@ -642,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533058254276</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".git ignore changed">
+      <created>1533058383806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533058383806</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -669,7 +676,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51183000" />
+    <option name="totallyTimeSpent" value="51247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1920" height="1080" extended-state="6" />
@@ -743,7 +750,8 @@
     <MESSAGE value=".git ignore added" />
     <MESSAGE value=".git ignore updated" />
     <MESSAGE value=".git ignore updated again" />
-    <option name="LAST_COMMIT_MESSAGE" value=".git ignore updated again" />
+    <MESSAGE value=".git ignore changed" />
+    <option name="LAST_COMMIT_MESSAGE" value=".git ignore changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1140,8 +1148,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="758">
+          <caret line="91" column="6" lean-forward="false" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
           <folding />
         </state>
       </provider>
