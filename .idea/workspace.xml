@@ -41,18 +41,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console-menu.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console-menu.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -476,7 +466,7 @@
       <workItem from="1532926902316" duration="1883000" />
       <workItem from="1532960866938" duration="7570000" />
       <workItem from="1532981193702" duration="3951000" />
-      <workItem from="1533057767178" duration="1856000" />
+      <workItem from="1533057767178" duration="2101000" />
     </task>
     <task id="LOCAL-00001" summary=".git ignore added">
       <created>1533058142599</created>
@@ -527,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533060766454</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=".git ignore changed">
+      <created>1533060848044</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1533060848044</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -554,7 +551,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52434000" />
+    <option name="totallyTimeSpent" value="52679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1920" height="1080" extended-state="6" />
@@ -628,9 +625,9 @@
     <MESSAGE value=".git ignore added" />
     <MESSAGE value=".git ignore updated again" />
     <MESSAGE value=".git ignore changed again" />
-    <MESSAGE value=".git ignore changed" />
     <MESSAGE value=".git ignore updated" />
-    <option name="LAST_COMMIT_MESSAGE" value=".git ignore updated" />
+    <MESSAGE value=".git ignore changed" />
+    <option name="LAST_COMMIT_MESSAGE" value=".git ignore changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1027,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
       </provider>
