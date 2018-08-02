@@ -11,8 +11,5 @@ public class Main {
 
         String login = "jankowalski";
 
-        new RegisterMenu().showContent(users);
-        //new AfterLoginMenu().showContent(users, login);
-
     }
 }

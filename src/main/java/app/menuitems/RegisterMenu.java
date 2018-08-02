@@ -6,12 +6,19 @@ import app.menuhelpers.LoginChecker;
 import app.menuhelpers.PasswordManager;
 import app.menuhelpers.PhoneChecker;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class RegisterMenu {
+public class RegisterMenu implements MenuItem {
 
-    public void showContent(List<User> users) {
+    private List<User> users = new ArrayList<>();
+
+    public RegisterMenu(List<User> users) {
+        this.users = users;
+    }
+
+    public Integer showContent() {
         Scanner in = new Scanner(System.in);
 
         //REGISTER FORM:
@@ -85,5 +92,8 @@ public class RegisterMenu {
         for (User u: users) {
             System.out.println(u.toString());
         }
+
+        // todo: change this hardcoded value
+        return 1;
     }
 }

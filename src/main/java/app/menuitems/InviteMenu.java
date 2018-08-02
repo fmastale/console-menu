@@ -2,9 +2,9 @@ package app.menuitems;
 
 import java.util.Scanner;
 
-public class InviteMenu {
+public class InviteMenu implements MenuItem{
 
-    public void showContent() {
+    public Integer showContent() {
         System.out.println("Welcome!\nIf you want to register press (1)\nAlready a user? Press (2) to login!" +
         "None of those? Type (e) to exit");
 
@@ -30,5 +30,8 @@ public class InviteMenu {
                 isInvalidOption = true;
             }
         } while (isInvalidOption);
+
+        // todo: change this hardcoded value
+        return 1;
     }
 }

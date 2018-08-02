@@ -4,11 +4,20 @@ import app.User;
 import app.menuhelpers.EmailChecker;
 import app.menuhelpers.PhoneChecker;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class AfterLoginMenu {
-    public void showContent(List<User> users, String login) {
+public class AfterLoginMenu implements MenuItem {
+    private List<User> users = new ArrayList<>();
+    private String login;
+
+    public AfterLoginMenu(List<User> users, String login) {
+        this.users = users;
+        this.login = login;
+    }
+
+    public Integer showContent() {
 
         Boolean wantToExit;
 
@@ -42,5 +51,8 @@ public class AfterLoginMenu {
                 wantToExit = true;
             }
         } while (!wantToExit);
+
+        // todo: change this hardcoded value
+        return 1;
     }
 }
