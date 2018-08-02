@@ -30,6 +30,12 @@ public class AfterLoginMenu implements MenuItem {
 
             if (option.equals("1")) {
                 System.out.println("Change your email: ");
+                for (User user: users) {
+                    if (user.getLogin().equals(login)){
+                        System.out.println("tostring");
+                        user.toString();
+                    }
+                }
                 String email = in.nextLine();
                 if (new EmailChecker().isValid(email)){
                     users.stream().filter(user -> user.getLogin().equals(login))

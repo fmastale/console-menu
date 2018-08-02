@@ -34,6 +34,7 @@ public class LoginMenu implements MenuItem {
             System.out.println("enter password: ");
             password = in.nextLine();
 
+            // todo: re-write this loop - each time it finds login && pass incorect it will print incorrect message
             for (User u : users) {
                 if (u.getLogin().equals(login) && u.getPassword().equals(password)){
                     System.out.println("Login and password correct!");
@@ -45,7 +46,6 @@ public class LoginMenu implements MenuItem {
 
         } while (!isValidLogAndPass);
 
-        // todo: change this hardcoded value
-        return 1;
+        return 4;
     }
 }

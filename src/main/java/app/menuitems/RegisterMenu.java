@@ -23,9 +23,12 @@ public class RegisterMenu implements MenuItem {
 
         //REGISTER FORM:
         //- LOGIN
+
+        System.out.println("***************************************\n");
+        System.out.println("Choose login. Note that it should be at least 3 characters long!");
+
         String login;
         boolean isLoginCorrect;
-        System.out.println("Choose login. Note that it should be at least 3 characters long!");
 
         do {
             System.out.println("Login: ");
@@ -34,13 +37,17 @@ public class RegisterMenu implements MenuItem {
         } while (!isLoginCorrect);
 
         //- PASSWORD
+        System.out.println("Select password:" +
+                       "\n- It should contain one uppercase letter (e.g. 'A')" +
+                       "\n- One digit (e.g. '1')" +
+                       "\n- One special character ('%')." +
+                         "\nPress:" +
+                         "\n(1) To set password on your own" +
+                         "\n(2) To generate random password");
+
         String password = null;
         boolean isValidOption;
         String option;
-
-        System.out.println("Select password:\n- It should contain one uppercase letter (e.g. 'A')\n" +
-                "- One digit (e.g. '1')\n- One special character ('%').\n" +
-                "Press:\n(1) To set password on your own\n(2) To generate random password");
 
         do {
             isValidOption = false;
@@ -93,7 +100,6 @@ public class RegisterMenu implements MenuItem {
             System.out.println(u.toString());
         }
 
-        // todo: change this hardcoded value
-        return 1;
+        return 3;
     }
 }
