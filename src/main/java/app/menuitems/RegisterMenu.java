@@ -25,7 +25,8 @@ public class RegisterMenu implements MenuItem {
         //- LOGIN
 
         System.out.println("***************************************\n");
-        System.out.println("Choose login. Note that it should be at least 3 characters long!");
+        System.out.println("Choose login." +
+                         "\nNote that it should be at least 3 characters long!");
 
         String login;
         boolean isLoginCorrect;
@@ -40,7 +41,7 @@ public class RegisterMenu implements MenuItem {
         System.out.println("Select password:" +
                        "\n- It should contain one uppercase letter (e.g. 'A')" +
                        "\n- One digit (e.g. '1')" +
-                       "\n- One special character ('%')." +
+                       "\n- One special character ('%').\n" +
                          "\nPress:" +
                          "\n(1) To set password on your own" +
                          "\n(2) To generate random password");

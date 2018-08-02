@@ -24,24 +24,25 @@ public class LoginMenu implements MenuItem {
 
         //todo: add exit option
         do {
+            System.out.println("***************************************\n");
             System.out.println("Enter login and password!");
 
             isValidLogAndPass = false;
 
-            System.out.println("enter login: ");
+            System.out.println("- Enter login: ");
             login = in.nextLine();
 
-            System.out.println("enter password: ");
+            System.out.println("- Enter password: ");
             password = in.nextLine();
 
             // todo: re-write this loop - each time it finds login && pass incorect it will print incorrect message
             for (User u : users) {
                 if (u.getLogin().equals(login) && u.getPassword().equals(password)){
-                    System.out.println("Login and password correct!");
+                    System.out.println("Login and password correct!\n");
                     isValidLogAndPass = true;
                 }
                 else
-                    System.out.println("Login and password incorrect!");
+                    System.out.println("Login and password incorrect!\n");
             }
 
         } while (!isValidLogAndPass);

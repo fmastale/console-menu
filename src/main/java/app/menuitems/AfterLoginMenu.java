@@ -9,33 +9,32 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AfterLoginMenu implements MenuItem {
-    private List<User> users = new ArrayList<>();
     private String login;
+    private List<User> users = new ArrayList<>();
 
-    public AfterLoginMenu(List<User> users, String login) {
-        this.users = users;
+    public AfterLoginMenu(String login, List<User> users) {
         this.login = login;
+        this.users = users;
     }
 
     public Integer showContent() {
 
-        Boolean wantToExit;
+        boolean wantToExit;
 
         Scanner in = new Scanner(System.in);
         String option;
         do {
-            System.out.println("You can:\n(1) Change email address\n(2) Change phone number\n(e) Exit");
+            System.out.println("***************************************\n");
+            System.out.println("You can:" +
+                            "\n(1) Change email address" +
+                            "\n(2) Change phone number" +
+                            "\n(e) Logout");
+
             wantToExit = false;
             option = in.nextLine();
 
             if (option.equals("1")) {
                 System.out.println("Change your email: ");
-                for (User user: users) {
-                    if (user.getLogin().equals(login)){
-                        System.out.println("tostring");
-                        user.toString();
-                    }
-                }
                 String email = in.nextLine();
                 if (new EmailChecker().isValid(email)){
                     users.stream().filter(user -> user.getLogin().equals(login))
@@ -53,12 +52,11 @@ public class AfterLoginMenu implements MenuItem {
                 }
             }
             else if (option.equals("e")) {
-                System.out.println("you want to exit");
+                System.out.println("you want to logout");
                 wantToExit = true;
             }
         } while (!wantToExit);
 
-        // todo: change this hardcoded value
         return 1;
     }
 }
