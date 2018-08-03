@@ -24,9 +24,10 @@ public class RegisterMenu implements MenuItem {
         //REGISTER FORM:
         //- LOGIN
 
-        System.out.println("***************************************\n");
-        System.out.println("Choose login." +
-                         "\nNote that it should be at least 3 characters long!");
+        System.out.println("***************************************" +
+                           "\nREGISTER");
+        System.out.println("\nChoose login:" +
+                         "\n- Note that it should be at least 3 characters long!");
 
         String login;
         boolean isLoginCorrect;
@@ -38,13 +39,13 @@ public class RegisterMenu implements MenuItem {
         } while (!isLoginCorrect);
 
         //- PASSWORD
-        System.out.println("Select password:" +
-                       "\n- It should contain one uppercase letter (e.g. 'A')" +
-                       "\n- One digit (e.g. '1')" +
-                       "\n- One special character ('%').\n" +
-                         "\nPress:" +
-                         "\n(1) To set password on your own" +
-                         "\n(2) To generate random password");
+        System.out.println("\nSelect password:" +
+                         "\n- It should contain one uppercase letter (e.g. 'A')" +
+                         "\n- One digit (e.g. '1')" +
+                         "\n- One special character ('%').\n" +
+                           "\nPress:" +
+                           "\n(1) To set password on your own" +
+                           "\n(2) To generate random password\n");
 
         String password = null;
         boolean isValidOption;
@@ -66,7 +67,7 @@ public class RegisterMenu implements MenuItem {
                 isValidOption = true;
             }
             else if (!option.equals("1") && !option.equals("2")){
-                System.out.println("Wrong value! Choose between (1) and (2)");
+                System.out.println("\nWrong value! Choose between (1) and (2)");
             }
         } while (!isValidOption);
 
@@ -76,9 +77,10 @@ public class RegisterMenu implements MenuItem {
         // In 'normal' way you want to send back registration email to address given in form.
         String email;
         boolean isValidEmail;
-        System.out.println("Valid email address should contain '@' e.g. one@inthe.zoo");
+        System.out.println("Choose email:" +
+                       "\n- Remember that valid email address should contain '@' e.g. johnsmith@mail.com");
         do {
-            System.out.println("Email: ");
+            System.out.println("\nEmail: ");
             email = in.nextLine();
             isValidEmail = new EmailChecker().isValid(email);
         } while (!isValidEmail);
@@ -88,7 +90,8 @@ public class RegisterMenu implements MenuItem {
         // I assumed that we check if the number is valid  in Polish standard, which means that it should be 9 digits long
         String phone;
         boolean isValidPhone;
-        System.out.println("Valid phone number should contain 9 digits and can't be separate with special characters like or empty spaces");
+        System.out.println("\nChoose phone number:" +
+                         "\n- Valid phone number should contain 9 digits and can't be separate with special characters or empty spaces");
         do {
             System.out.println("Phone: ");
             phone = in.nextLine();
@@ -96,10 +99,6 @@ public class RegisterMenu implements MenuItem {
         } while(!isValidPhone);
 
         users.add(new User(login, password, email, phone));
-
-        for (User u: users) {
-            System.out.println(u.toString());
-        }
 
         return 3;
     }

@@ -14,7 +14,7 @@ public class AfterLoginMenuTest {
         List<User> users = new ArrayList<>();
         String login = "JanekKowalsky";
 
-        AfterLoginMenu afterLoginMenu = new AfterLoginMenu(users, login);
+        AfterLoginMenu afterLoginMenu = new AfterLoginMenu(login, users);
 
         assertNotNull(afterLoginMenu);
     }

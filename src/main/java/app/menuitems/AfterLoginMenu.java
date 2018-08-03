@@ -19,7 +19,7 @@ public class AfterLoginMenu implements MenuItem {
 
     public Integer showContent() {
 
-        boolean wantToExit;
+        /*boolean wantToExit;
 
         Scanner in = new Scanner(System.in);
         String option;
@@ -55,7 +55,7 @@ public class AfterLoginMenu implements MenuItem {
                 System.out.println("you want to logout");
                 wantToExit = true;
             }
-        } while (!wantToExit);
+        } while (!wantToExit);*/
 
         return 1;
     }
