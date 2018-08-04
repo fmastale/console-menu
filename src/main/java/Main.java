@@ -11,8 +11,6 @@ public class Main {
     public static void main(String[] args) {
         List<User> users = new ArrayList<User>();
 
-        users.add(new User("JanKowalsky", "janKowalsky@1", "jan@mail.com", "111222333"));
-
         Map<Integer, MenuItem> appMenus = new TreeMap<Integer, MenuItem>();
 
         appMenus.put(1, new GreetingMenu());

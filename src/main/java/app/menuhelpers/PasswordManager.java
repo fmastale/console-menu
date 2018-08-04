@@ -30,7 +30,7 @@ public class PasswordManager {
         return password;
     }
 
-    // condition is that password must be at least 8 chars long
+    // password must be at least 8 chars long
     public boolean hasProperLength(String password) {
         if (password.length() < 8)
             return false;
@@ -38,7 +38,10 @@ public class PasswordManager {
             return true;
     }
 
-    // condition is that password should contain one uppercase letter, one digit and one special character
+    // password should contain:
+    // - one uppercase letter
+    // - one digit
+    // - one special character
     public boolean hasProperChars(String password) {
         char ch;
         boolean hasDigit = false;
