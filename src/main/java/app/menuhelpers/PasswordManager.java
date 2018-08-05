@@ -16,7 +16,7 @@ public class PasswordManager {
             password = in.nextLine();
 
             if (!hasProperLength(password)){
-                System.out.println("Password too short!");
+                System.out.println("Password is too short! It should contain at least 8 characters!");
                 isValidPassword = false;
             }
             if (!hasProperChars(password)){
@@ -43,18 +43,18 @@ public class PasswordManager {
     // - one digit
     // - one special character
     public boolean hasProperChars(String password) {
-        char ch;
+        char character;
         boolean hasDigit = false;
         boolean hasUppercase = false;
         boolean hasSpecialChar = false;
 
         for (int i = 0; i < password.length(); i++ ) {
-            ch = password.charAt(i);
-            if (Character.isDigit(ch))
+            character = password.charAt(i);
+            if (Character.isDigit(character))
                 hasDigit = true;
-            if (Character.isUpperCase(ch))
+            if (Character.isUpperCase(character))
                 hasUppercase = true;
-            if (containsSpecialChar(password))
+            if (containSpecialChar(password))
                 hasSpecialChar = true;
             if (hasDigit && hasUppercase && hasSpecialChar)
                 return true;
@@ -62,7 +62,7 @@ public class PasswordManager {
         return false;
     }
 
-    private boolean containsSpecialChar(String password) {
+    private boolean containSpecialChar(String password) {
         Pattern pattern = Pattern.compile("[^a-z0-9 ]", Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(password);
         boolean isValid = matcher.find();

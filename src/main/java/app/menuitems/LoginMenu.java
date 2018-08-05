@@ -26,7 +26,7 @@ public class LoginMenu implements MenuItem {
 
         do {
             System.out.println("***************************************" +
-                             "\nLOGIN\n" +
+                             "\nLOGIN" +
                              "\nEnter login and password!");
 
             isValidLogAndPass = false;
@@ -39,7 +39,7 @@ public class LoginMenu implements MenuItem {
 
             for (User u : users) {
                 if (u.getLogin().equals(login) && u.getPassword().equals(password)){
-                    System.out.println("Login and password correct!\n");
+                    System.out.println("Login and password correct!");
                     isValidLogAndPass = true;
                 }
             }
@@ -66,11 +66,11 @@ public class LoginMenu implements MenuItem {
         Scanner in = new Scanner(System.in);
         String option;
         do {
-            System.out.println("***************************************\n");
-            System.out.println("You can:" +
-                    "\n(1) Change email address" +
-                    "\n(2) Change phone number" +
-                    "\n(e) Logout");
+            System.out.println("***************************************");
+            System.out.println("\nYou can:" +
+                               "\n(1) Change email address" +
+                               "\n(2) Change phone number" +
+                               "\n(e) Logout");
 
             wantToExit = false;
             option = in.nextLine();
@@ -85,7 +85,7 @@ public class LoginMenu implements MenuItem {
                 }
             }
             else if (option.equals("2")) {
-                System.out.println("Change your phone: ");
+                System.out.println("Change your phone number: ");
                 String phone = in.nextLine();
                 if (new PhoneChecker().isValid(phone)){
                     users.stream().filter(user -> user.getLogin().equals(login))

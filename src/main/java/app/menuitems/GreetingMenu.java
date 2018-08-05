@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class GreetingMenu implements MenuItem{
 
     public Integer showContent() {
-        System.out.println("***************************************\n");
-        System.out.println("Welcome!" +
-                         "\nIf you want to register press (1)" +
-                         "\nAlready a user? Press (2) to login!" +
-                         "\nNone of those? Type (e) to exit");
+        System.out.println("***************************************");
+        System.out.println("\nWelcome!" +
+                           "\nIf you want to register press (1)" +
+                           "\nAlready a user? Press (2) to login!" +
+                           "\nNone of those? Type (e) to exit");
 
         Scanner in = new Scanner(System.in);
         String option;

@@ -42,10 +42,10 @@ public class RegisterMenu implements MenuItem {
         System.out.println("\nSelect password:" +
                          "\n- It should contain one uppercase letter (e.g. 'A')" +
                          "\n- One digit (e.g. '1')" +
-                         "\n- One special character ('%').\n" +
+                         "\n- One special character ('%')." +
                            "\nPress:" +
                            "\n(1) To set password on your own" +
-                           "\n(2) To generate random password\n");
+                           "\n(2) To generate random password");
 
         String password = null;
         boolean isValidOption;
@@ -67,7 +67,7 @@ public class RegisterMenu implements MenuItem {
                 isValidOption = true;
             }
             else if (!option.equals("1") && !option.equals("2")){
-                System.out.println("\nWrong value! Choose between (1) and (2)");
+                System.out.println("Wrong value! Choose between (1) and (2)");
             }
         } while (!isValidOption);
 
